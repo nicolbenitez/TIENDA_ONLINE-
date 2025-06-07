@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Tienda Online</h1>
+    </header>
+
+    <main>
+        <section id="productos">
+            <div class="producto">
+                <img src="computador1.jpg" alt="computador1">
+                <h3>Computador ASUS</h3>
+                <p>Intel Core i5</p>
+                <p><b>Almacenamiento:</b> 512 GB SSD</p>
+                <p><b>Sistema operativo:</b> Windows 10</p>
+                <p><b>Precio:</b> $2,300,000</p>
+                <button class="btn-agregar" data-id="1">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="computador2.jpg" alt="computador 2">
+                <h3>Computador 2</h3>
+                <p><b>Sistema operativo:</b> Windows 11</p>
+                <p><b>Color:</b> Rosa</p>
+                <p><b>Precio:</b> $1,800,000</p>
+                <button class="btn-agregar" data-id="2">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="auriculares1.png" alt="auriculares 1">
+                <h3>Auriculares</h3>
+                <p><b>Inalámbricos</b></p>
+                <p><b>Color:</b> Negro</p>
+                <p><b>Precio:</b> $85,000</p>
+                <button class="btn-agregar" data-id="3">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="mouse1.jpg" alt="mouse 1">
+                <h3>Mouse 1</h3>
+                <p><b>Color:</b> Negro con azul</p>
+                <p><b>Incluye:</b> USB</p>
+                <p><b>Precio:</b> $65,000</p>
+                <button class="btn-agregar" data-id="4">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="mouse2.jpg" alt="mouse 2">
+                <h3>Mouse 2</h3>
+                <p><b>Color:</b> Negro</p>
+                <p><b>Marca:</b> GENIUS</p>
+                <p><b>Precio:</b> $45,000</p>
+                <button class="btn-agregar" data-id="5">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="parlantes1.jpg" alt="parlante 1">
+                <h3>Parlante 1</h3>
+                <p><b>Color:</b> Negro con azul y gris</p>
+                <p><b>Marca:</b> Steren</p>
+                <p><b>Precio:</b> $38,000</p>
+                <button class="btn-agregar" data-id="6">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="teclado1.jpg" alt="teclado 1">
+                <h3>Teclado 1</h3>
+                <p><b>Color:</b> Blanco y negro</p>
+                <p><b>Incluye:</b> Mouse y memoria USB</p>
+                <p><b>Marca:</b> LOGITECH</p>
+                <p><b>Precio:</b> $25,000</p>
+                <button class="btn-agregar" data-id="7">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="teclado2.jpg" alt="teclado 2">
+                <h3>Teclado 2</h3>
+                <p><b>Color:</b> Negro</p>
+                <p><b>Marca:</b> LOGITECH</p>
+                <p><b>Precio:</b> $50,000</p>
+                <button class="btn-agregar" data-id="8">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="usb1.jpg" alt="USB 1">
+                <h3>USB 1</h3>
+                <p><b>Capacidad:</b> 16 GB</p>
+                <p><b>Color:</b> Gris</p>
+                <p><b>Tecnología:</b> KINGSTON</p>
+                <p><b>Precio:</b> $30,000</p>
+                <button class="btn-agregar" data-id="9">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="usb2.jpg" alt="USB 2">
+                <h3>USB 2</h3>
+                <p><b>Marca:</b> DTSEG</p>
+                <p><b>Capacidad:</b> 18 GB</p>
+                <p><b>Color:</b> Gris</p>
+                <p><b>Precio:</b> $30,000</p>
+                <button class="btn-agregar" data-id="10">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <section id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-de-carrito">
+                <!-- Items del carrito irán aquí -->
+            </ul>
+            <button id="btn-comprar">Comprar</button>
+            <button id="btn-nueva-compra">Nueva Compra</button>
+        </section>
+
+        <section id="factura" style="display: none;">
+            <h2>Factura</h2>
+            <div id="items-factura">
+                <!-- Items de la factura irán aquí -->
+            </div>
+            <p id="total-factura">Total factura: $0</p>
+            <button id="btn-volver-comprar">Volver a comprar</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
